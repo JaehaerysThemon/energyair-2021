@@ -10,45 +10,40 @@
 
 const mainDiv = document.getElementsByClassName('main')[0];
 const questions = {
-    "In welcher beliebten Serie war Tally Weijl zu sehen?":"Emily in Paris",
-    "In welcher Eventlocation findet die Energy Star Night statt?" : "Hallenstadion, Zürich",
-    "Energy Star Night Tickets kann man ausschliesslich…" : "gewinnen",
-    "An wie vielen Standorten bietet LIPO aktuell alles an, was es zum Wohnen braucht" : "22",
-    "Welcher Act eröffnete die Energy Star Night 2018?" : "Stefanie Heinzmann",
-    "Welche Ticketkategorie wird nicht für die Energy Star Night verlost?" : "VIP",
-    "Welcher dieser Acts hatte einen Auftritt an der Energy Star Night 2017?" : "Mark Forster",
-    "Wie heisst der Hund im aktuellen Werbespot?" : "Mex",
-    "Wann findet die Energy Star Night 2019 statt?" : "22. November 2019",
-    "Wen küsste Energy Moderator Jontsch an der letztjährigen Energy Star Night?" : "Jastina Doreen, Ex-Miss Schweiz",
-    "Wie viele Energy Star Night Tickets werden verlost?" : "14'000",
-    "Wann fand die Energy Star Night (ehemals Energy Stars For Free) zum ersten Mal statt?" : "2003",
-    "Die Energy Star Night hiess ehemals..." : "Energy Stars For Free",
-    "Was versteckt sich hinter dem Begriff «Massdesign» bei LIPO?" : "Vorhänge individuell konfigurieren",
-    "Wie lautete das Motto der Energy Star Night 2018?" : "«The Game Is On»",
-    "Welches Unternehmen ist «Presenting Partner» der Energy Star Night?" : "Swisscom",
-    "In welchen beiden Städten eröffnet LIPO am 22. November 2019 jeweils eine neue Filiale?" : "Davos und Grindelwald",
-    "Wann ist Konzertbeginn der Energy Star Night?" : "Um 19:00 Uhr",
-    "Was passiert, wenn es am Eventtag regnet?" : "Energy Star Night findet trotzdem statt",
-    "Welches Unternehmen ist «Medienpartner» der Energy Star Night 2019?" : "Usgang.ch",
-    "Auf welchem Weg kann man keine Energy Star Night Tickets gewinnen?" : "E-Mail",
-    "Auf welcher Social Media Plattform kann man KEINE Energy Star Night Tickets gewinnen?" : "Twitter",
-    "Wo findet die offizielle Aftershowparty der Energy Star Night statt?" : "Hiltl Club, Zürich",
-    "Wie viele Kunden besuchen LIPO jährlich?" : "Über 1'000'000",
-    "Was ist der Energy Music Award?" : "Ein Schweizer Musikpreis",
-    "Die Energy Star Night ist…" : "das grösste Indoor Musik-Event der Schweiz",
-    "Welche Ausgabe der Energy Star Night wurde zuletzt auf Pro7 Schweiz übertragen?" : "Energy Star Night 2017",
-    "Wo erfährst du immer die neusten Infos rund um die Energy Star Night?" : "im Radio, auf der Event-Website und über Social Media",
-    "Die wievielte Energy Star Night Ausgabe findet dieses Jahr statt?" : "Die siebzehnte",
-    "In welcher Stadt eröffnete 1976 die erste LIPO Filiale der Schweiz?" : "Dietikon (Kanton Zürich)",
-    "Wie lautet der offizielle Hashtag der Energy Star Night 2019?" : "#esn19",
-    "In welchem Kanton gibt es KEINE LIPO Filiale?" : "Graubünden",
-    "Was garantiert LIPO seinen Kunden?" : "Die tiefsten Preise der Schweiz",
-    "Welche Farbe hat das LIPO Logo?" : "Orange",
-    "Wie viele Energy Music Awards (in Zusammenarbeit mit dem Schweizerischen Roten Kreuz) wurden bisher verliehen?" : "3",
-    "Wann wurde Energy Stars For Free in Energy Star Night umbenannt?":"Oktober 2016",
-    "Der Energy Music Award wird jeweils in Zusammenarbeit mit ... verliehen?":"dem Schweizerischen Roten Kreuz",
-    "Was kann man bei LIPO kaufen?":"Möbel",
-    "Welcher Schweizer Act räumte den Energy Music Award 2018 ab?":"Nemo",
+    "WELCHEN KLEIDUNGSSTIL VERFOLGT TALLY WEIJL GRUNDSÄTZLICH?":"Just in time (voll im Trend)",
+    "IN WELCHEN FARBEN TRITT DAS ENERGY AIR LOGO JÄHRLICH FÜR DAS SOMMERFINALE AUF?":"Blau und Weiss",
+    "WER WAR DER ALLERERSTE ACT IN DER GESCHICHTE DES ENERY AIR?":"Bastian Baker",
+    "WIE ALT MUSS MAN SEIN, UM OHNE ERWACHSENE BEGLEITUNG AM ENERGY AIR TEILZUNEHMEN?":"14 Jahre",
+    "WELCHES SCHWEIZER DJ-DUO SORGTE AM ENERGY AIR 2019 ZU BEGINN FÜR REICHLICH STIMMUNG?":"Averdeck",
+    "WAS WAR DAS ERSTE, WAS KÜNSTLER KNACKEBOUL NACH SEINEM AUFTRITT 2014 BACKSTAGE GEMACHT HAT?":"Mit seinem Mami ein kühles Bier getrunken",
+    "IN WELCHEM SCHWEIZER KANTON ERÖFFNETE TALLY WEIJL 1987 DEN ERSTEN STORE?":"Fribourg",
+    "MIT WELCHER ZUSATZOPTION HAST DU DIE MÖGLICHKEIT, DIREKT VOR DER BÜHNE ZU STEHEN?":"XTRA Circle",
+    "IN WELCHER BELIEBTEN SERIE WAR TALLY WEIJL ZU SEHEN?":"Gossip Girl",
+    "WAS IST DAS PERFEKTE OPENAIR-OUTFIT":"Egal, hauptsache du kannst darin tanzen",
+    "WIE HEISST DIE INITIATIVE FÜR MEHR RESPEKT IM INTERNET, WELCHE SWISSCOM MIT ENERGY LANCIERT HAT UND AM ENERGY AIR IHREN GROSSEN HÖHEPUNKT FEIERT?":"Mute the Hate",
+    "WELCHE STADT GEHÖRT SEIT AUGUST AUCH ZUR ENERGY FAMILIE UND WIRD AM ENERGY AIR VERTRETEN SEIN?":"Luzern",
+    "WELCHE MUSIKERIN WURDE AM ENERGY AIR 2018 VON EINER 9-JÄHRIGEN BESUCHERIN AUF DER BÜHNE GECOVERT?":"Namika",
+    "WAS FOLGT AM DIESHÄHRIGEN ENERGY AIR ALS KRÖNENDER ABSCHLUSS?":"Aftershowparty",
+    "WIE HEISST DER OFFIZIELLE INSTAGRAM-ACCOUNT DES ENERGY AIR?":"@energyair_official",
+    "IN WIE VIELEN LÄNDERN IST DAS KLEIDERGESCHÄFT TALLY WEIJL VERTRETEN?":"In 39 Ländern",
+    "WIE HEISST DIE TRAM – UND BUSHALTESTELLE, WELCHE SICH DIREKT NEBEN DEM STADION WANKDORF BEFINDET?":"Wankdorf Center",
+    "WIE KANNST DU DEINE GEWINNCHANCEN BEI TICKETVERLOSUNGEN FÜR ENERGY EVENTS VERDOPPELN?":"Mit einer Energy One Membership",
+    "MIT WELCHEM AUFBLASBAREN TIER KONNTEN ZWEI AUSERWÄHLTE AM LETZTEN ENERGY AIR ÜBER DIE GANZE MEUTE CROWDSURFEN?":"Einhorn",
+    "MUSIKGRÖSSEN AUS WIE VIELEN LÄNDERN WAREN AM ENERGY AIR 2019 DABEI?":"Aus 7 Ländern",
+    "IN WELCHER LOCATION FINDET DAS ENERGY AIR 2021 UNTER FREIEM HIMMEL STATT?":"Stade de Suisse Wankdorf",
+    "UNTER WELCHEM MOTTO FEIERN WIR AM 4. SEPTEMBER 2021 DAS ENERGY AIR?":"We are back.",
+    "WIE WIRD TALLY WEIJL AUSGESPROCHEN?":"Talli Weil",
+    "Welcher Act feierte am letzten Energy air mit einem neuen Song eine WELTPRMIERE?":"Aloe Blacc",
+    "WOMIT ERSCHIENEN DIE ENERGY MEIN MORGEN MODERATOREN MOSER UND SCHELKER AUF DER ENERGY AIR BÜHNE 2019?":"Mit dem Skateboard",
+    "VON WELCHER MARKE WAR DAS MOTORRAD, MIT DEM LOCO ESCRITO AM LETZTEN ENERGY AIR ÜBER DIE BÜHNE FUHR?":"Harley-Davidson",
+    "WER WAR DER ÜBERRASCHUNGSACT AM ENERGY AIR 2018?":"Bastian Baker",
+    "WAS PASSIERT, WENN ES AM ENERGY AIR REGNET?":"Der Event findet trotzdem statt",
+    "WELCHER ACT WAR NOCH NIE AN EINEM ENERGY AIR DABEI?":"Dua Lipa",
+    "WANN IST DIE TICKETVERLOSUNG FÜRS ENERGY AIR 2021 GESTARTET?":"Am 2. August 2021",
+    "MIT WELCHEM ESC-HIT ROCKTE LUCA HÄNNI AM LETZTEN ENERGY AIR DIE BÜHNE?":"She Got Me",
+    "WELCHER KÜNSTLER MUSSTE AM LETZTEN ENERGY AIR BACKSTAGE EINEN PART AUS DEM DIALEKTRAPSONG VON SANDRO VORRAPPEN?":"Stress",
+    "WELCHE ZWEI ENERGY KULTFIGUREN MISCHTEN DAS ENERGY AIR 2017 RICHTIG AUF?":"Tinu & Dänu"
+
 };
 function rnd(){
     let min = 700;
@@ -83,7 +78,7 @@ function makeAction() {
 }
 
 function answerQuestion() {
-    let curr = questions[mainDiv.getElementsByClassName('question-text')[0].innerHTML];
+    let curr = questions[mainDiv.getElementsByClassName('question-text')[0].innerHTML.toUpperCase()];
     let answer = document.getElementById(curr);
     answer.click();
 }
